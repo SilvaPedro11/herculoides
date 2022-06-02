@@ -1,0 +1,53 @@
+    
+	.ul ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #e20000;
+		overflow: hidden;
+	}
+	.ul li a, .dropbtn {
+  		display: inline-block;
+  		color: #e5b629;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}	
+	.ul li a:hover {
+ 		 background-color: #111;
+	}
+	ul. li {
+  		float: left;
+	}
+	.logo {
+		text-align: center;
+	} 
+	.ul li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	.ul li a:hover {
+		background-color: #ed3939;
+		/*color: white;*/
+	}		
+	.ul li {
+		float: left;
+	}
+	footer {
+		font-family: consolas, "Lucidas Console", "Courier New", monospace;
+		background-color: #000;
+		color: #FFF;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 15px;
+	}
+	.posicao {
+
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		right: 0;

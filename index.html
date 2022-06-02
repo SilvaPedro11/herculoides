@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+    <head>
+        <title>Os Herculóides</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Hover and Click Trigger for Circular Elements with jQuery - jQuery plugin for hovering and clicking on circles" />
+        <meta name="keywords" content="jquery, hover, plugin, click, trigger, event, custom, area, web development, circle, circular shape, css3" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css' />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>
+		<script type="text/javascript" src="js/modernizr.custom.72835.js"></script>		
+    </head>
+    <body>
+    	<div class="logo">
+	<a href="index.html" target="_self">	
+	<img src="imagens/logo1.png" alt="Logo" width="250" height="90">
+    </a>
+</div>
+    <div class="ul"> 
+	<ul>
+	<li><a href="index.html">Página Inicial</a></li>
+	<li><a href="personagens/index.html">Personagens</a></li>
+	<li><a href="temporadas/index.html">Temporadas</a></li>
+   <li><a href="curiosidades/index.html">Curiosidades</a></li>
+   <li><a href="#">Dubladores</a></li>
+   </ul>
+   </div>
+           <div class="header">
+                <span class="right">
+                </span>
+                <div class="clr"></div>
+            </div>
+            <div class="wrapper">
+				<!-- If browser does not support border radius, show this message -->
+				<p class="message">Your browser does not support the border-radius property!</p>
+				<div class="section">
+					<div class="normal-trigger-area">
+						<a href="#" id="circle" class="ec-circle">
+							<h3>Herculóides</h3>
+						</a>
+					</div>
+					<div class="content">
+						<h1>Os Herculóides</h1>
+						<p>Os Herculóides (The Herculoids) é uma série animada de ficção científica produzida pela Hanna-Barbera, onde humanos e monstros, juntos, lutam para proteger o planeta Amzot (depois Quasar) dos invasores vindos do espaço. Foi um dos desenhos de ficção científica de maior sucesso da Hanna-Barbera Studios. Estreou nas manhãs de sábado da Rede CBS em 9 de setembro de 1967, com aproximadamente 7 minutos de duração cada, apresentados dentro de um segmento de meia hora. O programa foi reprisado anos mais tarde como parte do desenho Super Globetrotters, em 1978. <br>
+						Entre setembro de 1981 e setembro de 1982, Os Herculóides voltaram à televisão em onze novos episódios, desta vez exibidos na rede NBC. Menos inspirada que a série original, agora os heróis apareciam também na companhia de Space Ghost e mais personagens de outras séries.
+						 </p>
+
+
+					</div>
+				</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.circlemouse.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				
+				$('#circle').circlemouse({
+					onMouseEnter	: function( el ) {
+					
+						el.addClass('ec-circle-hover');
+					
+					},
+					onMouseLeave	: function( el ) {
+						
+						el.removeClass('ec-circle-hover');
+						
+					},
+					onClick			: function( el ) {
+						
+						alert('clicked');
+						
+					}
+				});
+				
+			});
+        </script>
+     <br><br><br><br><br><br><br>
+
+    <div class="historia"> 
+    <h1>História</h1>
+
+     <p>No distante e estranho planeta Quasar, com enormes plantas e monstros interplanetários, vive a família Herculóides, os únicos moradores deste lugar perdido no espaço. Frequentemente o planeta é atacado por alienígenas e forças inimigas afim de conquistá-lo para fins perversos. Entre os principais inimigos estão Zarko e Mekkor, mas o grupo enfrentava ameaças das mais diferentes e estranhas. Os vilões raras vezes se repetiam, e os Herculóides encaravam desde formigas e aranhas gigantes até homens mecânicos e piratas espaciais.</p>
+
+	<p>Para defender sua morada, o rei Zandor, conta com um físico invejável, um super-estilingue e um escudo de múltiplas utilidades. Ele tem ainda a companhia e a ajuda de Tara sua esposa e a rainha de Amzot. O casal tem um filho de treze anos, Dorno, que em tudo imita o pai. Tanto mãe como filho compartilham a extrema habilidade com o estilingue.</p>
+
+	<p>Zandor e os Herculóides conhecem alguns segredos de Amzot, como as rochas explosivas. Dentro de uma caverna, no alto de uma montanha, há uma rocha que explode com impactos, neutralizando seus inimigos, que geralmente são formigas e aranhas gigantes, homens mecânicos ou piratas espaciais.</p>
+
+	<br><br><br><br>
+
+    <div class="posicao">
+    <footer>
+	Autores: Luiz Henrique Lemos Oliveira e Pedro Augusto Mendonça da Silva
+	</footer></div>    
+    </body>
+</html>
